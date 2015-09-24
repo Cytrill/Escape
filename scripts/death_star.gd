@@ -5,6 +5,7 @@ var rotation_speed = 180
 
 func _ready():
 	set_fixed_process(true)
+	add_to_group("death")
 
 func _fixed_process(delta):
 	rotate(deg2rad(rotation_speed*rotation_direction)*delta)
